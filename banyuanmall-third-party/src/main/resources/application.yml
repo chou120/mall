@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    alicloud:
+      access-key: LTAI4GHAZexBck1Y2CUCwv1b
+      secret-key: 2gVKwYYW9IyvDW8OijxxkejgMWfi0p
+      oss:
+        endpoint: oss-cn-shanghai.aliyuncs.com
+        bucket: banyuanmall
+  application:
+    name: banyuanmall-third-party
+
+server:
+  port: 20000
+

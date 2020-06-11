@@ -1,0 +1,30 @@
+#server:
+#  port: 7000
+#spring:
+#  datasource:
+#    username: root
+#    password: zhou
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://192.168.11.149:3306/banyuanmall_sms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 192.168.11.149:8848
+#  application:
+#    name: banyuanmall-coupon  #当前服务在注册中心的应用名字
+##配置sql
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto #主键自增
+#
+#management:
+#  endpoint:
+#    nacos-discovery:
+#      enabled: false
+#
+# 对配置文件进行拆分 拆分成不同的配置文件   框架的配置放在框架配置文件中 如 mybatis.properties
+# 可以在nacos 的配置中心来进行配置
+#
+#

@@ -1,0 +1,15 @@
+POST  http://localhost:88/api/product/category/delete
+Content-Type: application/json
+{
+"cateIds": [1432]
+}
+
+###
+POST  http://localhost:88/api/product/category/info/1432
+
+###
+
+
+
+
+###

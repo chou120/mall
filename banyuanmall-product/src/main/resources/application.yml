@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    username: root
+    password: zhou
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.11.149:3306/banyuanmall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.11.149:8848
+    alicloud:
+      access-key: LTAI4GHAZexBck1Y2CUCwv1b
+      secret-key: 2gVKwYYW9IyvDW8OijxxkejgMWfi0p
+      oss:
+        endpoint: oss-cn-shanghai.aliyuncs.com
+
+  application:
+    name: banyuanmall-product
+#配置sql
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto #主键自增
+      logic-delete-value: 1    #表示没删除
+      logic-not-delete-value: 0 #表示删除了
+server:
+  port: 10000
+
+
+# 如果出现了  endpoint  is  blank 错误 就添加如下配置
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+
